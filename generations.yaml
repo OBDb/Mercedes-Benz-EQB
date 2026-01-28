@@ -1,0 +1,10 @@
+references:
+  - "https://en.wikipedia.org/wiki/Mercedes-Benz_EQB"
+
+generations:
+  - name: "First Generation"
+    start_year: 2021
+    end_year: 2026
+    description: "The Mercedes-Benz EQB (X243) is a seven-seat battery electric mid-size D-segment crossover SUV produced by Mercedes-Benz. It is part of the EQ family and is based on the Mercedes-Benz GLB-Class using the MFA2 platform. The EQB is available in both front-wheel drive and 4MATIC branded dual motor all wheel drive configurations, with five and seven seat layouts available."
+    body_style: "5-door SUV"
+    platform: "Mercedes-Benz MFA2"
