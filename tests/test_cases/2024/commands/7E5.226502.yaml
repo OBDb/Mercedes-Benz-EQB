@@ -1,0 +1,8 @@
+command_id: 7E5.226502
+test_cases:
+- expected_values:
+    MERCEDES_HV_RANGE: 1000
+  response: 7ED0762650200005BE5
+- expected_values:
+    MERCEDES_HV_RANGE: 1000
+  response: 7ED0762650200005BE6
