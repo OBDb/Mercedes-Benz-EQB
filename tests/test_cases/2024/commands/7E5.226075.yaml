@@ -1,0 +1,32 @@
+command_id: 7E5.226075
+test_cases:
+- expected_values:
+    MERCEDES_HV_V: 100
+  response: 7ED05626075358C
+- expected_values:
+    MERCEDES_HV_V: 100
+  response: 7ED05626075359C
+- expected_values:
+    MERCEDES_HV_V: 100
+  response: 7ED0562607535A8
+- expected_values:
+    MERCEDES_HV_V: 100
+  response: 7ED0562607535C0
+- expected_values:
+    MERCEDES_HV_V: 100
+  response: 7ED0562607535F4
+- expected_values:
+    MERCEDES_HV_V: 100
+  response: 7ED056260753608
+- expected_values:
+    MERCEDES_HV_V: 100
+  response: 7ED056260753610
+- expected_values:
+    MERCEDES_HV_V: 100
+  response: 7ED056260753624
+- expected_values:
+    MERCEDES_HV_V: 100
+  response: 7ED056260753634
+- expected_values:
+    MERCEDES_HV_V: 100
+  response: 7ED056260753640
