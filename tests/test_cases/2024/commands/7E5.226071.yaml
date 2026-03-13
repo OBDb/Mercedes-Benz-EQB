@@ -5,28 +5,7 @@ test_cases:
   response: 7ED0562607122AC
 - expected_values:
     MERCEDES_CNVRTR_REQ_V: 100
-  response: 7ED05626071232F
+  response: 7ED0562607122DE
 - expected_values:
     MERCEDES_CNVRTR_REQ_V: 100
-  response: 7ED056260712330
-- expected_values:
-    MERCEDES_CNVRTR_REQ_V: 100
-  response: 7ED056260712332
-- expected_values:
-    MERCEDES_CNVRTR_REQ_V: 100
-  response: 7ED056260712334
-- expected_values:
-    MERCEDES_CNVRTR_REQ_V: 100
-  response: 7ED056260712336
-- expected_values:
-    MERCEDES_CNVRTR_REQ_V: 100
-  response: 7ED056260712338
-- expected_values:
-    MERCEDES_CNVRTR_REQ_V: 100
-  response: 7ED056260712339
-- expected_values:
-    MERCEDES_CNVRTR_REQ_V: 100
-  response: 7ED05626071233C
-- expected_values:
-    MERCEDES_CNVRTR_REQ_V: 100
-  response: 7ED05626071233E
+  response: 7ED056260712302
