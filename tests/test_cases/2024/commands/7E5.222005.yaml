@@ -1,17 +1,29 @@
 command_id: 7E5.222005
 test_cases:
 - expected_values:
-    MERCEDES_AUX_V: 12.79765
+    EQB_AUX_V: 12.79765
   response: 7ED046220057E
 - expected_values:
-    MERCEDES_AUX_V: 12.89922
+    EQB_AUX_V: 12.89922
   response: 7ED046220057F
 - expected_values:
-    MERCEDES_AUX_V: 14.72745
+    EQB_AUX_V: 13.00078
+  response: 7ED0462200580
+- expected_values:
+    EQB_AUX_V: 13.10235
+  response: 7ED0462200581
+- expected_values:
+    EQB_AUX_V: 14.42275
+  response: 7ED046220058E
+- expected_values:
+    EQB_AUX_V: 14.72745
   response: 7ED0462200591
 - expected_values:
-    MERCEDES_AUX_V: 14.82902
+    EQB_AUX_V: 14.82902
   response: 7ED0462200592
 - expected_values:
-    MERCEDES_AUX_V: 14.93059
+    EQB_AUX_V: 14.93059
   response: 7ED0462200593
+- expected_values:
+    EQB_AUX_V: 15.03216
+  response: 7ED0462200594

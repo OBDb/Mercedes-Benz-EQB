@@ -1,5 +1,8 @@
 command_id: 7E5.226504
 test_cases:
 - expected_values:
-    MERCEDES_SERVICE_DIST: 25000
+    EQB_SERVICE_DIST: 20000
+  response: 7ED056265044E20
+- expected_values:
+    EQB_SERVICE_DIST: 25000
   response: 7ED0562650461A8
