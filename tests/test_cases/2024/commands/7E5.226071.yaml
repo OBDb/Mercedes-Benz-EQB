@@ -1,11 +1,14 @@
 command_id: 7E5.226071
 test_cases:
 - expected_values:
-    MERCEDES_CNVRTR_REQ_V: 100
+    EQB_CNVRTR_REQ_V: 221.9
   response: 7ED0562607122AC
 - expected_values:
-    MERCEDES_CNVRTR_REQ_V: 100
+    EQB_CNVRTR_REQ_V: 223.15
   response: 7ED0562607122DE
 - expected_values:
-    MERCEDES_CNVRTR_REQ_V: 100
+    EQB_CNVRTR_REQ_V: 224.05
   response: 7ED056260712302
+- expected_values:
+    EQB_CNVRTR_REQ_V: 241.9
+  response: 7ED0562607125CC

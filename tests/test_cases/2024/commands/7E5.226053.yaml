@@ -1,11 +1,14 @@
 command_id: 7E5.226053
 test_cases:
 - expected_values:
-    MERCEDES_HV_A: 2.7
+    EQB_HV_A: 2.7
   response: 7ED05626053001B
 - expected_values:
-    MERCEDES_HV_A: 25.4
+    EQB_HV_A: 25.4
   response: 7ED0562605300FE
 - expected_values:
-    MERCEDES_HV_A: 0
+    EQB_HV_A: -50.6
+  response: 7ED05626053FE06
+- expected_values:
+    EQB_HV_A: -24.7
   response: 7ED05626053FF09

@@ -1,4 +1,169 @@
 { "commands": [
-
+{ "hdr": "624", "rax": "5A4", "fcm1": true, "dbg": true, "cmd": {"22": "0200"}, "freq": 5,
+  "signals": [
+    {"id": "EQB_ELEC_MACHINE_2_ROTOR_T", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 6513, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Electric machine 2 rotor temperature"},
+    {"id": "EQB_ELEC_MACHINE_2_ECT",     "path": "Engine", "fmt": {"bix": 32, "len": 16, "max": 6513, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Electric machine 2 coolant temperature"},
+    {"id": "EQB_ELEC_MACHINE_2_T_1",     "path": "Engine", "fmt": {"bix": 48, "len": 16, "max": 6513, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Electric machine 2 stator temperature 1"},
+    {"id": "EQB_ELEC_MACHINE_2_T_2",     "path": "Engine", "fmt": {"bix": 64, "len": 16, "max": 6513, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Electric machine 2 stator temperature 2"}
+  ]},
+{ "hdr": "624", "rax": "5A4", "fcm1": true, "dbg": true, "cmd": {"22": "0201"}, "freq": 1,
+  "signals": [
+    {"id": "EQB_AUX_V_HD", "path": "Battery", "fmt": {"bix": 16, "len": 16, "max": 100, "mul": 1000, "div": 10000, "unit": "volts" }, "name": "12V system voltage, hd", "suggestedMetric": "starterBatteryVoltage"}
+  ]},
+{ "hdr": "624", "rax": "5A4", "fcm1": true, "dbg": true, "cmd": {"22": "0202"}, "freq": 1,
+  "signals": [
+    {"id": "EQB_AC_CURRENT",      "path": "Engine", "fmt": {"bix": 80,  "len": 16, "max": 5734, "min": -819, "div": 10, "add": -819.2, "unit": "amps" }, "name": "AC current"},
+    {"id": "EQB_PHASE_U_CURRENT", "path": "Engine", "fmt": {"bix": 96,  "len": 16, "max": 5734, "min": -819, "div": 10, "add": -819.2, "unit": "amps" }, "name": "Phase U current"},
+    {"id": "EQB_PHASE_V_CURRENT", "path": "Engine", "fmt": {"bix": 112, "len": 16, "max": 5734, "min": -819, "div": 10, "add": -819.2, "unit": "amps" }, "name": "Phase V current"},
+    {"id": "EQB_PHASE_W_CURRENT", "path": "Engine", "fmt": {"bix": 128, "len": 16, "max": 5734, "min": -819, "div": 10, "add": -819.2, "unit": "amps" }, "name": "Phase W current"}
+  ]},
+{ "hdr": "624", "rax": "5A4", "fcm1": true, "dbg": true, "cmd": {"22": "0205"}, "freq": 0.25,
+  "signals": [
+    {"id": "EQB_ELEC_MACHINE_2_RPM", "path": "Movement", "fmt": {"bix": 16, "len": 16, "max": 65535, "unit": "rpm" }, "name": "Electric machine 2 rpm"},
+    {"id": "EQB_ELEC_MACHINE_1_RPM", "path": "Movement", "fmt": {"bix": 80, "len": 16, "max": 65535, "unit": "rpm" }, "name": "Electric machine 1 rpm"}
+  ]},
+{ "hdr": "624", "rax": "5A4", "fcm1": true, "dbg": true, "cmd": {"22": "0206"}, "freq": 1,
+  "signals": [
+    {"id": "EQB_ELEC_MACHINE_2_ST", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "volts" }, "name": "Electric machine 2 state, diagnostic"}
+  ]},
+{ "hdr": "624", "rax": "5A4", "fcm1": true, "dbg": true, "cmd": {"22": "0207"}, "freq": 0.25,
+  "signals": [
+    {"id": "EQB_ELEC_MACHINE_2_ACT", "path": "Engine", "fmt": { "len": 16, "max": 6053, "min": -500, "div": 10, "add": -500, "unit": "newtonMeters" }, "name": "Electric machine 2, actual torque"}
+  ]},
+{ "hdr": "662", "rax": "5E2", "fcm1": true, "dbg": true, "cmd": {"22": "012C"}, "freq": 1,
+  "signals": [
+    {"id": "EQB_HIGH_V_COMPONENTS_1", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "High voltage components, N129/1 locked state"}
+  ]},
+{ "hdr": "662", "rax": "5E2", "fcm1": true, "dbg": true, "cmd": {"22": "012F"}, "freq": 1,
+  "signals": [
+    {"id": "EQB_HIGH_V_SYSTEM_V_1_1", "path": "Battery", "fmt": { "len": 16, "max": 65535, "unit": "volts" }, "name": "High voltage system voltage at power machine 1 unit, N129/1"}
+  ]},
+{ "hdr": "662", "rax": "5E2", "fcm1": true, "dbg": true, "cmd": {"22": "0200"}, "freq": 5,
+  "signals": [
+    {"id": "EQB_POWER_MACHINE_1_ACT", "path": "Engine", "fmt": {           "len": 16, "max": 6053,  "min": -500, "div": 10, "add": -500, "unit": "newtonMeters" }, "name": "Power machine 1, actual torque"},
+    {"id": "EQB_POWER_MACHINE_1_T",   "path": "Engine", "fmt": {"bix": 32, "len": 16, "max": 32727, "min": -40,  "div": 2,  "add": -40,  "unit": "celsius"      }, "name": "Power machine 1 stator temperature"},
+    {"id": "EQB_POWER_MACHINE_1_MAX", "path": "Engine", "fmt": {"bix": 48, "len": 16, "max": 6053,  "min": -500, "div": 10, "add": -500, "unit": "newtonMeters" }, "name": "Power machine 1, maximum available torque"}
+  ]},
+{ "hdr": "662", "rax": "5E2", "fcm1": true, "dbg": true, "cmd": {"22": "0203"}, "freq": 1,
+  "signals": [
+    {"id": "EQB_KLEMME_30C_ST", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Terminal 30C state"}
+  ]},
+{ "hdr": "662", "rax": "5E2", "fcm1": true, "dbg": true, "cmd": {"22": "0301"}, "freq": 3600,
+  "signals": [
+    {"id": "EQB_PARKING_LOCK_ADPT_ST", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Parking lock adaptation state"}
+  ]},
+{ "hdr": "662", "rax": "5E2", "fcm1": true, "dbg": true, "cmd": {"22": "0302"}, "freq": 1,
+  "signals": [
+    {"id": "EQB_PARKING_LOCK_ST", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Parking lock state"}
+  ]},
+{ "hdr": "662", "rax": "5E2", "fcm1": true, "dbg": true, "cmd": {"22": "0306"}, "freq": 1,
+  "signals": [
+    {"id": "EQB_ELEC_MACHINE_N129_1_0_4",     "path": "Engine", "fmt": {          "len": 8, "max": 255, "unit": "scalar" }, "name": "Electric machine, N129/1 power level, 0-4"},
+    {"id": "EQB_ELEC_MACHINE_N129_1_REQ_0_4", "path": "Engine", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "scalar" }, "name": "Electric machine, N129/1 requested power level, 0-4"}
+  ]},
+{ "hdr": "7E2", "rax": "7EA", "cmd": {"22": "2001"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2026 },
+  "signals": [
+    {"id": "EQB_FL_VSS", "path": "Movement", "fmt": {           "len": 16, "max": 655.34, "div": 100, "nullmax": 655.34, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "EQB_FR_VSS", "path": "Movement", "fmt": {"bix": 16, "len": 16, "max": 655.34, "div": 100, "nullmax": 655.34, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "EQB_RL_VSS", "path": "Movement", "fmt": {"bix": 32, "len": 16, "max": 655.34, "div": 100, "nullmax": 655.34, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
+    {"id": "EQB_RR_VSS", "path": "Movement", "fmt": {"bix": 48, "len": 16, "max": 655.34, "div": 100, "nullmax": 655.34, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
+  ]},
+{ "hdr": "7E2", "rax": "7EA", "cmd": {"22": "2002"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2026 },
+  "signals": [
+    {"id": "EQB_LON_ACC",                        "path": "Orientation", "fmt": {"bix": 8,   "len": 16, "max": 1.63, "min": -1.63,                "div": 20000, "sign": true, "unit": "gravity" }, "name": "Longitudinal acceleration"},
+    {"id": "EQB_LAT_ACC",                        "path": "Orientation", "fmt": {"bix": 24,  "len": 16, "max": 511,  "min": -512,  "mul": 15.625, "div": 1000,  "sign": true, "unit": "gravity" }, "name": "Lateral acceleration"},
+    {"id": "EQB_YAW_RATE",                       "path": "Orientation", "fmt": {"bix": 48,  "len": 16, "max": 114,  "min": -114,  "mul": 34.97,  "div": 10000, "sign": true, "unit": "gravity" }, "name": "Yaw rate"},
+    {"id": "EQB_STEER_ANGLE",                    "path": "Control",     "fmt": {"bix": 72,  "len": 16, "max": 3276, "min": -3276, "mul": 1000,   "div": 10000, "sign": true, "unit": "degrees" }, "name": "Steering wheel angle"},
+    {"id": "EQB_MASTER_BREAK_CYLINDER_PRESSURE", "path": "Engine",      "fmt": {"bix": 96,  "len": 16, "max": 500,  "min": -500,  "mul": 153,    "div": 10000, "sign": true, "unit": "bars"    }, "name": "Master break cylinder pressure"},
+    {"id": "EQB_VACUUM_BREAK_PRESSURE",          "path": "Engine",      "fmt": {"bix": 144, "len": 16, "max": 65,                                "div": 1000,                "unit": "bars"    }, "name": "Vacuum break pressure"}
+  ]},
+{ "hdr": "7E5", "cmd": {"22": "2005"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
+  "signals": [
+    {"id": "EQB_AUX_V", "path": "Battery", "fmt": { "len": 8, "max": 25.9, "mul": 25.9, "div": 255, "unit": "volts" }, "name": "Auxiliary battery voltage", "suggestedMetric": "starterBatteryVoltage"}
+  ]},
+{ "hdr": "7E5", "cmd": {"22": "2526"}, "freq": 5, "dbgfilter": { "to": 2023, "from": 2025 },
+  "signals": [
+    {"id": "EQB_HV_COOLANT_T", "path": "Battery", "fmt": { "len": 16, "max": 100, "mul": 1250, "div": 10000, "sign": true, "unit": "celsius" }, "name": "HV battery coolant temperature"}
+  ]},
+{ "hdr": "7E5", "cmd": {"22": "6050"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
+  "signals": [
+    {"id": "EQB_HV_SOC", "path": "Battery", "fmt": { "len": 16, "max": 100, "div": 100, "unit": "percent" }, "name": "HV battery state of charge", "suggestedMetric": "stateOfCharge"}
+  ]},
+{ "hdr": "7E5", "cmd": {"22": "6053"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
+  "signals": [
+    {"id": "EQB_HV_A", "path": "Battery", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "amps" }, "name": "HV battery amperage"}
+  ]},
+{ "hdr": "7E5", "cmd": {"22": "6071"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
+  "signals": [
+    {"id": "EQB_CNVRTR_REQ_V", "path": "Battery", "fmt": { "len": 16, "max": 1638.375, "mul": 250, "div": 10000, "unit": "volts" }, "name": "DC converter requested voltage"}
+  ]},
+{ "hdr": "7E5", "cmd": {"22": "6075"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
+  "signals": [
+    {"id": "EQB_HV_V", "path": "Battery", "fmt": { "len": 16, "max": 1638.375, "mul": 25, "div": 1000, "unit": "volts" }, "name": "HV battery voltage"}
+  ]},
+{ "hdr": "7E5", "cmd": {"22": "6502"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
+  "signals": [
+    {"id": "EQB_HV_RANGE", "path": "Trips", "fmt": { "len": 32, "max": 1000, "unit": "kilometers" }, "name": "HV battery remaining distance", "suggestedMetric": "electricRange"}
+  ]},
+{ "hdr": "7E5", "cmd": {"22": "6504"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
+  "signals": [
+    {"id": "EQB_SERVICE_DIST", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance to next service"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "2006"}, "freq": 1,
+  "signals": [
+    {"id": "EQB_KLEMME_87_FEEDBACK", "path": "Engine", "fmt": { "len": 16, "max": 1279, "mul": 19531, "div": 1000000, "unit": "volts" }, "name": "Terminal 87 feedback"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "2525"}, "freq": 5,
+  "signals": [
+    {"id": "EQB_POWER_ELEC_UNIT_T_5", "path": "Engine", "fmt": { "len": 16, "max": 4095, "min": -4096, "div": 8, "sign": true, "unit": "celsius" }, "name": "Power electric unit temperature sensor, B11/5"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "3008"}, "freq": 1,
+  "signals": [
+    {"id": "EQB_KLEMME_15_STAT", "path": "Engine", "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "offon" }, "name": "Terminal 15 status"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "3505"}, "freq": 1,
+  "signals": [
+    {"id": "EQB_KLEMME_50_STAT", "path": "Engine", "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "offon" }, "name": "Terminal 50 status"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "5504"}, "freq": 1,
+  "signals": [
+    {"id": "EQB_CLT_PMP_V_M13_5", "path": "Battery", "fmt": { "len": 8, "max": 31.87, "div": 8, "unit": "volts" }, "name": "Coolant pump voltage, M13/5"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "5506"}, "freq": 1,
+  "signals": [
+    {"id": "EQB_CLT_PMP_V_M43_1", "path": "Battery", "fmt": { "len": 8, "max": 31.87, "div": 8, "unit": "volts" }, "name": "Coolant pump voltage, M43/1"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "550A"}, "freq": 1,
+  "signals": [
+    {"id": "EQB_HIGH_V_PTC_HEATER_V_5", "path": "Battery", "fmt": { "len": 16, "max": 1638, "div": 40, "unit": "volts" }, "name": "High voltage PTC heater voltage, N33/5"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "550C"}, "freq": 1,
+  "signals": [
+    {"id": "EQB_HIGH_V_PTC_HEATER_ST_5", "path": "Engine", "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "offon" }, "name": "High voltage PTC heater state, N33/5"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "550F"}, "freq": 1,
+  "signals": [
+    {"id": "EQB_RADIATOR_GRILL_M2_39_POS", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "percent" }, "name": "Radiator grill, M2/39 position"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "5510"}, "freq": 1,
+  "signals": [
+    {"id": "EQB_RADIATOR_GRILL_M2_39", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Radiator grill, M2/39 status, closing"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "6074"}, "freq": 1,
+  "signals": [
+    {"id": "EQB_DC_DC_MODULE_ST", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "amps" }, "name": "DC/DC module state, boost"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "6503"}, "freq": 1,
+  "signals": [
+    {"id": "EQB_REMAINING_OP_TIME", "path": "Engine", "fmt": { "len": 16, "max": 63487, "min": -2048, "add": -2048, "unit": "unknown" }, "name": "Remaining operating time"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "D027"}, "freq": 1,
+  "signals": [
+    {"id": "EQB_KLEMME_87_STAT", "path": "Engine", "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "offon" }, "name": "Terminal 87 status"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "D50A"}, "freq": 1,
+  "signals": [
+    {"id": "EQB_FAN_MOTOR_DUTY_M4_7", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "percent" }, "name": "Fan motor duty, M4/7"}
+  ]}
 ]
 }
