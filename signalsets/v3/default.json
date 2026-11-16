@@ -68,9 +68,9 @@
     {"id": "EQB_RL_VSS", "path": "Movement", "fmt": {"bix": 32, "len": 16, "max": 655.34, "div": 100, "nullmax": 655.34, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
     {"id": "EQB_RR_VSS", "path": "Movement", "fmt": {"bix": 48, "len": 16, "max": 655.34, "div": 100, "nullmax": 655.34, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
   ]},
-{ "hdr": "7E2", "rax": "7EA", "cmd": {"22": "2002"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2026 },
+{ "hdr": "7E2", "rax": "7EA", "cmd": {"22": "2002"}, "freq": 0.25, "dbgfilter": { "to": 2022, "from": 2026 },
   "signals": [
-    {"id": "EQB_LON_ACC",                        "path": "Orientation", "fmt": {"bix": 8,   "len": 16, "max": 1.63, "min": -1.63,                "div": 20000, "sign": true, "unit": "gravity" }, "name": "Longitudinal acceleration"},
+    {"id": "EQB_LON_ACC",                        "path": "Orientation", "fmt": {"bix": 8,   "len": 16, "max": 1.63, "min": -1.63,                "div": 20000, "sign": true, "unit": "gravity" }, "name": "Longitudinal acceleration",      "suggestedMetric": "longitudinalAcceleration"},
     {"id": "EQB_LAT_ACC",                        "path": "Orientation", "fmt": {"bix": 24,  "len": 16, "max": 511,  "min": -512,  "mul": 15.625, "div": 1000,  "sign": true, "unit": "gravity" }, "name": "Lateral acceleration"},
     {"id": "EQB_YAW_RATE",                       "path": "Orientation", "fmt": {"bix": 48,  "len": 16, "max": 114,  "min": -114,  "mul": 34.97,  "div": 10000, "sign": true, "unit": "gravity" }, "name": "Yaw rate"},
     {"id": "EQB_STEER_ANGLE",                    "path": "Control",     "fmt": {"bix": 72,  "len": 16, "max": 3276, "min": -3276, "mul": 1000,   "div": 10000, "sign": true, "unit": "degrees" }, "name": "Steering wheel angle"},
