@@ -103,7 +103,7 @@
   ]},
 { "hdr": "7E5", "cmd": {"22": "6502"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
   "signals": [
-    {"id": "EQB_HV_RANGE", "path": "Trips", "fmt": { "len": 32, "max": 1000, "unit": "kilometers" }, "name": "HV battery remaining distance", "suggestedMetric": "electricRange"}
+    {"id": "EQB_HV_RANGE", "path": "Trips", "fmt": { "len": 32, "max": 1000, "unit": "kilometers" }, "name": "HV battery remaining distance"}
   ]},
 { "hdr": "7E5", "cmd": {"22": "6504"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
   "signals": [
